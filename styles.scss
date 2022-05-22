@@ -1,0 +1,59 @@
+
+
+.textarea {
+
+    width: 80%;
+    height: 8%;
+    background-color: black;
+    color: white;
+    
+    
+    }
+    
+    .textzone:focus { 
+    
+    
+    }
+    button {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    }
+    
+    .button_slide {
+      color: #FFF;
+      border: 2px solid rgb(216, 2, 134);
+      border-radius: 0px;
+      padding: 9px 18px;
+      display: inline-block;
+      font-family: "Lucida Console", Monaco, monospace;
+      font-size: 11px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      box-shadow: inset 0 0 0 0 #D80286;
+      -webkit-transition: ease-out 0.4s;
+      -moz-transition: ease-out 0.4s;
+      transition: ease-out 0.4s;
+    }
+    
+    .slide_left:hover {
+      box-shadow: inset 0 0 0 50px #D80286;
+    }
+    
+    #outer {
+      width: 91px;
+      margin: 50px auto 0 auto;
+      text-align: center;
+    }
+    
+    .margin {
+     
+      margin-left: 10px;
+    
+    
+    }
+    
+    
+    
+    

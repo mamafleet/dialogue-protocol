@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.scss" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">  -->
+  </head>
+  <body>
+    <div class="margin">
+      <a href="view.html">view</a>
+      <link rel="stylesheet" href="styles.scss" />
+      <button id="authButton">log in</button>
+      <p id="message">app not started</p>
+      <p>enter the lines you want to connect</p>
+      <div class="backendboxes">
+        <textarea
+          id="latin"
+          class="textarea is-primary"
+          placeholder="language 1"
+        ></textarea>
+        <textarea
+          id="english"
+          class="textarea is-info"
+          placeholder="language 2"
+        ></textarea>
+        <p>link the the sequential value of words from the lines</p>
+        <p>
+          i.e: [1,2] [the first word of the first line, the second word of the
+          second line]
+          <p>
+            p.s. experiment, you can always go back and change the lines and links 
+            with the update function
+          </p>
+        </p>
+        <textarea
+          id="connections"
+          class="textarea is-info"
+          placeholder="[1,1],[2,2],[3,3],[4,4],[5,5],[6,6],[7,7],[8,8],[9,9],[10,10]"
+        >[1,1],[2,2],[3,3],[4,4],[5,5],[6,6],[7,7],[8,8],[9,9],[10,10]</textarea>
+        <button
+          id="outer"
+          class="button_slide slide_left"
+          onclick="createLine(latin.value,english.value,connections.value)"
+        >
+          Add
+        </button>
+      </div>
+      <div id="lineview"></div>
+    </div>
+  </body>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://auth.web10.app/sdk/wapi.js"></script>
+  <script src="script.js"></script>
+</html>
