@@ -9,36 +9,29 @@
       <link rel="stylesheet" href="styles.scss" />
       <button id="authButton">log in</button>
       <p id="message">app not started</p>
-      <p>enter the lines you want to connect</p>
+      <p>enter down some ideas and where you want to keep them</p>
       <div class="backendboxes">
         <textarea
-          id="latin"
+          id="book"
           class="textarea is-primary"
-          placeholder="language 1"
+          placeholder="bookname"
         ></textarea>
         <textarea
-          id="english"
+          id="idea"
           class="textarea is-info"
-          placeholder="language 2"
+          placeholder="idea"
         ></textarea>
-        <p>link the the sequential value of words from the lines</p>
-        <p>
-          i.e: [1,2] [the first word of the first line, the second word of the
-          second line]
-          <p>
-            p.s. experiment, you can always go back and change the lines and links 
-            with the update function
-          </p>
+        <p>list IDS of connected ideas</p>
         </p>
         <textarea
           id="connections"
           class="textarea is-info"
-          placeholder="[1,1],[2,2],[3,3],[4,4],[5,5],[6,6],[7,7],[8,8],[9,9],[10,10]"
-        >[1,1],[2,2],[3,3],[4,4],[5,5],[6,6],[7,7],[8,8],[9,9],[10,10]</textarea>
+          placeholder="_nfowrunfnfusnfuisSfafof,_SuiofnswiuofnaIOdjaW)OdfjsioSif"
+        ></textarea>
         <button
           id="outer"
           class="button_slide slide_left"
-          onclick="createLine(latin.value,english.value,connections.value)"
+          onclick="createLine(book.value,idea.value,connections.value)"
         >
           Add
         </button>
